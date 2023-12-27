@@ -38,7 +38,7 @@ export class App extends Component {
       <div className={style.wrapper}>
         <h1>Feedback App</h1>
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys(this.state)}
           onLeaveFeedback={this.handleFeedback}
         />
         {hasFeedback ? (
